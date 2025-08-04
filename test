@@ -1,0 +1,19 @@
+DOMAIN_NAME=jalbiser.42.fr
+
+# MYSQL SETUP
+MYSQL_DATABASE=wordpress
+MYSQL_USER=wpuser
+MYSQL_PASSWORD=wppassword
+MYSQL_ROOT_PASSWORD=rootpassword
+
+# WORDPRESS SETUP
+WP_ADMIN_USER=jdoe
+WP_ADMIN_PASSWORD=adminpass123
+WP_ADMIN_EMAIL=admin@jalbiser.42.fr
+WP_USER=regularuser
+WP_USER_PASSWORD=userpass123
+WP_USER_EMAIL=user@jalbiser.42.fr
+
+# PATHS
+MYSQL_DATA_PATH=/home/jalbiser/data/mysql
+WP_DATA_PATH=/home/jalbiser/data/wordpress

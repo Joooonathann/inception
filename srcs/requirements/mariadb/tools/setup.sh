@@ -13,6 +13,9 @@ chown -R mysql:mysql /var/lib/mysql
 if [ ! -d "/var/lib/mysql/$MYSQL_DATABASE" ]; then
     echo "Initializing MariaDB..."
     
+    # Initialize the MySQL data directory
+    mysql_install_db --user=mysql --datadir=/var/lib/mysql --rpm
+    
     echo "Starting MariaDB temporarily to configure it..."
     
     # Start MariaDB temporarily to configure it

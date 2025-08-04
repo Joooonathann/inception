@@ -1,9 +1,9 @@
 all: up
 
 up:
-	sudo mkdir -p /home/jonathan/data/wordpress
-	sudo mkdir -p /home/jonathan/data/mysql
-	sudo chown -R $(USER):$(USER) /home/jonathan/data
+	sudo mkdir -p /home/jalbiser/data/wordpress
+	sudo mkdir -p /home/jalbiser/data/mysql
+	sudo chown -R $(USER):$(USER) /home/jalbiser/data
 	docker-compose -f srcs/docker-compose.yml up -d --build
 
 down:
@@ -14,8 +14,8 @@ clean: down
 	docker volume prune -f
 
 fclean: clean
-	sudo rm -rf /home/jonathan/data/wordpress/*
-	sudo rm -rf /home/jonathan/data/mysql/*
+	sudo rm -rf /home/jalbiser/data/wordpress/*
+	sudo rm -rf /home/jalbiser/data/mysql/*
 
 re: fclean all
 

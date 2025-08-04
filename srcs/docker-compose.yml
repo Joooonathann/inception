@@ -59,14 +59,14 @@ volumes:
     driver_opts:
       type: none
       o: bind
-      device: /home/jonathan/data/wordpress
+      device: /home/jalbiser/data/wordpress
 
   db_data:
     driver: local
     driver_opts:
       type: none
       o: bind
-      device: /home/jonathan/data/mysql
+      device: /home/jalbiser/data/mysql
 
 networks:
   inception:
